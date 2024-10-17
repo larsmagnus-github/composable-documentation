@@ -1,0 +1,17 @@
+[package]
+name = "composable-documentation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+actix-files = "0.6"
+actix-cors = "0.7"
+env_logger = "0.9"
+log = "0.4"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
+html2md = "0.2.14"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+url = "2.2"
+tokio = "1.40.0"
